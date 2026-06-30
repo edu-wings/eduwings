@@ -78,7 +78,7 @@
         {% endif %}
 
         <span class="ticker-item" style="color:#00C851;">
-          <a href="{{ item.url | relative_url }}" style="color:#00C851; text-decoration:none;">
+          <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}" style="color:#00C851; text-decoration:none;">
             [{% if site.lang == 'ur' %}{{ item_type_ur }}{% else %}{{ item_type_en }}{% endif %}]
             {% if site.lang == 'ur' %}{{ item.title_ur }}{% else %}{{ item.title_en }}{% endif %}
             &ndash;
@@ -107,7 +107,7 @@
           {% assign item_type_ur = "کتابی جائزہ" %}
         {% endif %}
         <span class="ticker-item" style="color:#00C851;" aria-hidden="true">
-          <a href="{{ item.url | relative_url }}" style="color:#00C851; text-decoration:none;">
+          <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}" style="color:#00C851; text-decoration:none;">
             [{% if site.lang == 'ur' %}{{ item_type_ur }}{% else %}{{ item_type_en }}{% endif %}]
             {% if site.lang == 'ur' %}{{ item.title_ur }}{% else %}{{ item.title_en }}{% endif %}
             &ndash;

@@ -153,7 +153,7 @@ Deployment is automatic. Every time you push to the `main` branch, GitHub Action
 
 You do not need to do anything else.
 
-**First deployment:** Go to your repository Settings → Pages → Source, and select `gh-pages` branch, root folder. Save. The site will be live at `https://kitabomori.github.io/eduwings/`.
+**First deployment:** Go to your repository Settings → Pages → Source, and select `gh-pages` branch, root folder. Save. The site will be live at `https://edu-wings.github.io/eduwings/`.
 
 ---
 
