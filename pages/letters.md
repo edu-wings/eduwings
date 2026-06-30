@@ -18,7 +18,7 @@ permalink: /letters/
   {% for item in sorted_items %}
   <div class="content-card">
     <h2 class="card-title">
-      <a href="{{ item.url }}">
+      <a href="{{ item.url | relative_url }}">
         {% if site.lang == 'ur' %}{{ item.title_ur }}{% else %}{{ item.title_en }}{% endif %}
       </a>
     </h2>
@@ -30,7 +30,7 @@ permalink: /letters/
         {{ item.description_en }}
       {% endif %}
     </p>
-    <a href="{{ item.url }}" class="card-read-more">
+    <a href="{{ item.url | relative_url }}" class="card-read-more">
       {% if site.lang == 'ur' %}مزید پڑھیں &rarr;{% else %}Read more &rarr;{% endif %}
     </a>
   </div>
