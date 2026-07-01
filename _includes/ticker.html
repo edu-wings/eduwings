@@ -33,6 +33,10 @@
   {% assign ticker_items = ticker_items | push: item %}
 {% endfor %}
 
+{% for item in site.reflections %}
+  {% assign ticker_items = ticker_items | push: item %}
+{% endfor %}
+
 <!-- Step 2: Sort by date descending, take top 5 -->
 {% assign ticker_sorted = ticker_items | sort: "date" | reverse %}
 {% assign ticker_top5 = ticker_sorted | limit: 5 %}
@@ -75,6 +79,9 @@
         {% elsif site.book_reviews contains item %}
           {% assign item_type_en = "Book Review" %}
           {% assign item_type_ur = "کتابی جائزہ" %}
+            {% if site.blogs reflections item %}
+          {% assign item_type_en = "reflections" %}
+          {% assign item_type_ur = "عکاسی" %}
         {% endif %}
 
         <span class="ticker-item" style="color:#00C851;">
