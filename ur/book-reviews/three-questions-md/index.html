@@ -19,16 +19,16 @@
 <!-- Page title: prefer page-specific title, fall back to site title -->
 <title>
   
-    گھر – کتابومری
+     – کتابومری
   
 </title>
 
 <!-- Meta description -->
-<meta name="description" content="کتابومری – تحقیق پر مبنی مواد کے ذریعے مطالعے کا فروغ">
+<meta name="description" content="تحقیق پر مبنی مواد کے ذریعے مطالعے کا فروغ">
 
 <!-- Open Graph -->
-<meta property="og:title" content="گھر">
-<meta property="og:description" content="کتابومری – تحقیق پر مبنی مواد کے ذریعے مطالعے کا فروغ">
+<meta property="og:title" content="کتابومری">
+<meta property="og:description" content="تحقیق پر مبنی مواد کے ذریعے مطالعے کا فروغ">
 <meta property="og:type" content="website">
 
 <!-- Google Fonts: Inter (English) + Noto Nastaliq Urdu (Urdu)
@@ -202,267 +202,53 @@
 
 
   <main id="main-content">
-    <!-- News ticker – Home page only -->
-<!-- ============================================================
-     ticker.html – scrolling news ticker for the Home page only.
-     Shows the 5 most recent items from blogs, opeds, letters,
-     and book_reviews combined, sorted by date (newest first).
-
-     COLOURS:
-       Background: #FFFFFF (dark mode: #1a1a1a)
-       Text:       #00C851 (bright green)
-       Border:     1px bottom in #009F93
-       Heading:    #009F93
-
-     ANIMATION: CSS-only marquee. Pauses on hover.
-     RTL: animation-direction reversed for dir="rtl" pages.
-     No icons, no emoji, plain text only.
+    <!-- ============================================================
+     post.html – layout for collection items (blogs, letters, etc.)
+     Shows title, date, description, and body content.
      ============================================================ -->
+<article class="post-container">
 
-<!-- Step 1: Collect all items from the four collections into one array -->
-
-<!-- Step 2: Sort by date descending, take top 5 -->
-
-<!-- Step 3: Render the ticker bar -->
-<div class="ticker-bar" style="background-color:#FFFFFF; border-bottom:1px solid #009F93;">
-
-  <!-- Heading label (not part of the scroll) -->
-  <span class="ticker-label" style="color:#009F93; font-weight:600; padding:0 12px; white-space:nowrap;">
-    تازہ ترین
-  </span>
-
-  <!-- Pause/resume control for accessibility (WCAG 2.2.2) -->
-  <button class="ticker-pause" onclick="document.querySelector('.ticker-track').classList.toggle('paused')" aria-label="سکرول روکیں یا جاری رکھیں" style="color:#009F93; background:none; border:1px solid #009F93; padding:2px 8px; font-size:0.75rem; margin-right:8px; cursor:pointer; flex-shrink:0;">
-    ⏸
-  </button>
-
-  <!-- Scrolling track wrapper (overflow hidden) -->
-  <div class="ticker-overflow">
-    <div class="ticker-track">
-
-      <!-- Step 4: Output each item with its collection-type label -->
+  <header class="post-header">
+    <h1 class="post-title">
       
-
-        <!-- Determine collection-type label -->
-        
-        
-
-        
-
-        <span class="ticker-item" style="color:#00C851;">
-          <a href="/ur/book-reviews/three-questions-md/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            01 July 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-
+        Three Questions.md
       
+    </h1>
+  </header>
 
-        <!-- Determine collection-type label -->
-        
-        
+  <div class="post-body">
+    Lev Nikolayevich Tolstoy (1828-1910) believed that novels serve as tools for psychological education and reform, helping us understand one another, especially those who may seem unappealing at first glance. As the master of realistic fiction, he wrote acclaimed works such as “War and Peace,” “Anna Karenina,” and the novella "The Death of Ivan Ilyich," which is considered one of his finest. His idea of nonviolent resistance, as expressed in "The Kingdom of God Is Within You," has profoundly influenced 20th-century figures, including Mahatma Gandhi and Martin Luther King Jr. In "The Three Questions," part of the compilation "What Men Live By and Other Tales," Tolstoy offers deep, insightful perspectives on various aspects of human life.
 
-        
+One day, a king realised that the answers to three simple questions could lead to success in every task he undertook. To encourage participation, he announced a reward for the correct answers. People from all walks of life offered various responses: for "What is the right time to begin anything?" answers ranged from calendars and schedules to magicians. Similarly, responses to "Who are the right people to listen to and whom should we avoid?" varied widely. Some suggested listening to counsellors, doctors, and experts in their respective fields. Lastly, for "What are the most important things to do?", no satisfactory answers were found.
 
-        <span class="ticker-item" style="color:#00C851;">
-          <a href="/ur/book-reviews/the-catcher-in-the-rye/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            30 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
+When no one received the reward, the king sought the wisdom of a hermit who lived simply in the wilderness. Upon encountering the hermit, the king repeated his questions, but the hermit was busy digging. By the afternoon, the king still had not received any answers. Just then, an injured man came running toward them. The king promptly tended to the man's injuries. The following morning, the injured man apologised and revealed that he had intended to seek revenge against the king, which had led to his injury at the hands of his guards. The king forgave him and restored his property.
 
-      
+As the king prepared to leave without answers, the hermit said, "You have already been answered. When I was digging yesterday, you helped me, and that was the most important time. I was the most important man, and doing good for me was the most important business. Then, when the injured man came, attending to him became the most important task, or else he could have died. He was the most important man at that moment, and what you did for him was the most important action."
 
-        <!-- Determine collection-type label -->
-        
-        
+Tolstoy firmly believed that literature and the arts could be used for psychological education and reform. The story of the three questions reflects his beliefs and thoughts. If we focus on living in the present, value those around us, and prioritise our actions, we can overcome many obstacles. Tolstoy summarises his argument: "Remember, there is only one time that is important—' now.' It is the most crucial time because it is the only time when we have any power. The most necessary person is the one you are with, as no one knows if they will ever have to engage with another. And the most important affair is to do good for that person because man was sent into this life for that purpose." A century later, Paulo Coelho echoed these sentiments in "The Alchemist," stating, “I don’t live in either my past or my future. I’m interested only in the present. If you can always concentrate on the present, you’ll be a happy man. Life will be a party for you, a grand festival.”
 
-        
+By applying the philosophy of the three questions, we can lead lives free of hassle and depression. For instance, consider students in a class. If they occupy their minds with distractions outside class, such as social media and gossip, they learn little and end up blaming external factors for their struggles. Their priority should be the teacher, their classmates, and the topic at hand.
 
-        <span class="ticker-item" style="color:#00C851;">
-          <a href="/ur/opeds/public-education-investment/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            30 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
 
-      
+  </div>
 
-        <!-- Determine collection-type label -->
-        
-        
-
-        
-
-        <span class="ticker-item" style="color:#00C851;">
-          <a href="/ur/blogs/privatization-of-education/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            30 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-
-      
-
-        <!-- Determine collection-type label -->
-        
-        
-
-        
-
-        <span class="ticker-item" style="color:#00C851;">
-          <a href="/ur/letters/letter-to-teacher/" style="color:#00C851; text-decoration:none;">
-            []
-            محترمہ ٹیچر کے نام ایک خط
-            &ndash;
-            24 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-
-      
-
-      <!-- Step 5: Duplicate items so the scroll loops seamlessly -->
-      
-        
-        
-        
-        <span class="ticker-item" style="color:#00C851;" aria-hidden="true">
-          <a href="/ur/book-reviews/three-questions-md/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            01 July 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-      
-        
-        
-        
-        <span class="ticker-item" style="color:#00C851;" aria-hidden="true">
-          <a href="/ur/book-reviews/the-catcher-in-the-rye/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            30 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-      
-        
-        
-        
-        <span class="ticker-item" style="color:#00C851;" aria-hidden="true">
-          <a href="/ur/opeds/public-education-investment/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            30 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-      
-        
-        
-        
-        <span class="ticker-item" style="color:#00C851;" aria-hidden="true">
-          <a href="/ur/blogs/privatization-of-education/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            30 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-      
-        
-        
-        
-        <span class="ticker-item" style="color:#00C851;" aria-hidden="true">
-          <a href="/ur/letters/letter-to-teacher/" style="color:#00C851; text-decoration:none;">
-            []
-            محترمہ ٹیچر کے نام ایک خط
-            &ndash;
-            24 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-      
-
-    </div><!-- /.ticker-track -->
-  </div><!-- /.ticker-overflow -->
-
-</div>
-<!-- /.ticker-bar -->
-
-<div class="page-container">
-
+  <!-- Author and date, shown at the end of the piece -->
   
-
-  <section class="home-welcome">
-    <h1 class="home-heading">کتابومری میں خوش آمدید</h1>
-    <p class="home-tagline">تحقیق پر مبنی مواد کے ذریعے مطالعے کا فروغ</p>
-    <p>
-      کتابومری ایک رضاکارانہ تعلیمی اشاعتی پلیٹ فارم ہے جو محققین، طلباء، اساتذہ، پالیسی سازوں، صحافیوں اور عوام کے لیے بنایا گیا ہے۔
-      ہمارا مقصد تعلیم، خواندگی اور مطالعے سے متعلق شواہد پر مبنی گفتگو کو فروغ دینا ہے۔
-    </p>
-    <p>
-      آپ یہاں بلاگز، اوپ ایڈز، خطوط، کتابی جائزے اور ذاتی عکاسی پائیں گے۔
-      اگر آپ اپنی تحریر شیئر کرنا چاہتے ہیں تو ہماری <a href="/ur/guidelines/">ہدایات</a> پڑھیں اور <a href="/ur/contact/">رابطہ</a> کریں۔
-    </p>
-  </section>
-
-  <section class="home-sections">
-    <div class="section-cards">
-
-      <div class="section-card">
-        <h2><a href="/ur/blogs/">بلاگز</a></h2>
-        <p>تعلیم اور معاشرے پر مبنی تجزیاتی اور دلیل پر مبنی تحریریں۔</p>
-      </div>
-
-      <div class="section-card">
-        <h2><a href="/ur/opeds/">اوپ ایڈ</a></h2>
-        <p>تجربے اور تحقیق پر مبنی رائے جس میں عملی تجاویز شامل ہیں۔</p>
-      </div>
-
-      <div class="section-card">
-        <h2><a href="/ur/letters/">خطوط</a></h2>
-        <p>اساتذہ، طلباء اور محققین کی طرف سے ذاتی خطوط۔</p>
-      </div>
-
-      <div class="section-card">
-        <h2><a href="/ur/book-reviews/">کتابی جائزے</a></h2>
-        <p>تعلیم، خواندگی اور تحقیق سے متعلق کتابوں کے تنقیدی جائزے۔</p>
-      </div>
-
-      <div class="section-card">
-        <h2><a href="/ur/reflections/">عکاسی</a></h2>
-        <p>مطالعے اور تعلیمی سفر پر ذاتی مشاہدات۔</p>
-      </div>
-
-      <div class="section-card">
-        <h2><a href="/ur/main-ne-kya-dekha/">میں نے کیا دیکھا</a></h2>
-        <p>مطالعے اور سیکھنے کی جگہوں پر فیلڈ نوٹس۔</p>
-      </div>
-
-    </div>
-  </section>
-
   
+  <p class="post-meta-bottom">
+    
+      01 July 2026
+    
+  </p>
 
-</div>
+  <!-- Back link -->
+  <p class="post-back">
+    <button onclick="history.back()" class="post-back-btn">
+      ← واپس جائیں
+    </button>
+  </p>
+
+</article>
 
   </main>
 
