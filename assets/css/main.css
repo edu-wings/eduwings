@@ -62,7 +62,7 @@
   @apply md:hidden;
 }
 
-/* Desktop: caret always shown, submenu revealed on hover */
+/* Desktop: caret always shown, submenu revealed only on click */
 @media (min-width: 768px) {
   .submenu-toggle {
     display: inline-block;
@@ -77,7 +77,6 @@
     @apply left-auto right-0;
   }
 
-  .nav-item-has-children:hover .submenu,
   .nav-item-has-children.submenu-open .submenu {
     @apply flex;
   }
